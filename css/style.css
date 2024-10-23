@@ -1,3 +1,83 @@
 .body{
     color: azure;
 }
+
+/* Estilos para toda la seccion de productos */
+.seccion-productos{
+    padding: 20px;
+    background-color: bisque;
+    text-align: center;
+}
+
+/* Encabezado de la seccion */
+
+.seccion-productos h2{
+    font-size: 32px;
+    margin-bottom: 20px;
+    /* falta font-family */
+}
+
+/* Contendor de productos */
+.productos {
+    display: flex;
+    gap: 5px;
+    
+}
+
+/* Cada tarjeta de producto */
+
+.card-producto{
+    background-color: white;
+    min-width: 200px;
+    width: 200px;
+    margin: 100 px;
+    padding: 100 px;
+    flex-wrap: nowrap;
+    overflow: hidden;
+
+}
+.card-producto img{
+    max-width: 100%;
+    min-height: 200px;
+    max-height: 200px;
+    border-radius: 13.42px;
+    /* object-fit: cover; */
+}
+.card-producto h3{
+    text-align: left;
+    font-size: 16px;
+}
+
+.card-producto p{
+    text-align: left;
+}
+
+.rating {
+    display: flex;
+    justify-content:flex-start;
+}
+
+.rating p{
+    margin: 0;
+}
+.pricing p{
+    font-size: 20px;
+    font-weight: bold;
+    
+}   
+
+.seccion-productos button{
+    display: block;
+    font-size: 14px;
+    width: 100%;
+    padding: 16px 54px;
+    background-color: white;
+    border-radius: 62px;
+    border:1px solid rgba(0, 0, 0, 0.100);
+}
+
+.seccion-productos button:hover{
+    background-color: aqua;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+
+}
