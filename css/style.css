@@ -81,3 +81,23 @@
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
 
 }
+
+.top-bar {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+.top-bar a {
+    color: white;
+    text-decoration: underline;
+}
+.brands-section {
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+.brands-section .brand {
+    margin: 0 20px;
+}
