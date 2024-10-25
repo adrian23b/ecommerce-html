@@ -1,11 +1,14 @@
-.body{
-    color: azure;
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 16px;
 }
 
 /* Estilos para toda la seccion de productos */
 .seccion-productos{
-    padding: 20px;
-    background-color: bisque;
+    background-color: rgb(199, 176, 149);
+    width:100vw; /* ocupe el 100% de la ventana visible */
     text-align: center;
 }
 
@@ -19,22 +22,23 @@
 
 /* Contendor de productos */
 .productos {
+    background-color: red;
+    margin: 10px;
     display: flex;
-    gap: 5px;
-    
+    flex-direction: row;
+    gap: 15%;
+    overflow-x:scroll;
+    scrollbar-width: none; /*esconder la barra de navegacion*/
+    scroll-snap-type: x proximity; /*estilo de navegacion*/
 }
 
 /* Cada tarjeta de producto */
 
 .card-producto{
     background-color: white;
-    min-width: 200px;
-    width: 200px;
-    margin: 100 px;
-    padding: 100 px;
-    flex-wrap: nowrap;
-    overflow: hidden;
-
+    min-width: 198px;
+    width: 198px;
+    scroll-snap-align: center;
 }
 .card-producto img{
     max-width: 100%;
@@ -46,6 +50,8 @@
 .card-producto h3{
     text-align: left;
     font-size: 16px;
+    font-weight: bold;
+    /* margin: 1px; */
 }
 
 .card-producto p{
@@ -65,6 +71,9 @@
     font-weight: bold;
     
 }   
+
+
+/* Botón */
 
 .seccion-productos button{
     display: block;
