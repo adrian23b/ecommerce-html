@@ -82,6 +82,16 @@
 
 }
 
+.top-bar {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+.top-bar a {
+    color: white;
+    text-decoration: underline;
+}
 .brands-section {
     background-color: black;
     color: white;
