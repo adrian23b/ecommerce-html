@@ -98,6 +98,7 @@ body{
     background-color: white;
     border-radius: 62px;
     border:1px solid rgba(0, 0, 0, 0.100);
+    margin-bottom: 40px;
 }
 
 .seccion-productos button:hover{
@@ -112,6 +113,7 @@ hr {
     margin: 20px auto;
 }
 
+/* Top bar and brand section */
 .top-bar {
     background-color: black;
     color: white;
@@ -130,4 +132,64 @@ hr {
 }
 .brands-section .brand {
     margin: 0 20px;
+}
+
+/* ads-category section */
+.cat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.ads-category{
+    background-color: #F0F0F0;
+    width: 85%;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+/* category container */
+.t-category{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+    
+}
+
+/* commom styles li */
+
+.category-item{
+    font-size: 24PX;
+    height: 190px;
+    padding: 35px;
+    text-align: left;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+}
+
+/* specific styles */
+
+.casual{
+    background-image: url("../images/image_11.png");
+}
+
+.formal{
+    background-image: url("../images/image_13.png");
+    background-position: center bottom;
+}
+
+.party{
+    background-image: url("../images/image_12.png");
+}
+
+.gym{
+    background-image: url("../images/image_14.png");
 }
