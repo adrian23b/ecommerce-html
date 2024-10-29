@@ -7,7 +7,7 @@ body{
 
 /* Estilos para toda la seccion de productos */
 .seccion-productos{
-    width:100vw; /* ocupe el 100% de la ventana visible */
+    width:100%;
     text-align: center;
 }
 
@@ -20,29 +20,24 @@ body{
 
 /* Contendor de productos */
 .productos {
-    margin: 10px;
     display: flex;
-    flex-direction: row;
-    /* gap: 15%; */
     overflow-x:scroll;
     scrollbar-width: none; /*esconder la barra de navegacion*/
-    scroll-snap-type: x proximity; /*estilo de navegacion*/
+    scroll-snap-type: x mandatory; /*estilo de navegacion*/
+    gap: 10px;
+    padding: 10px;
 }
 
 /* Cada tarjeta de producto */
 
 .card-producto{
-    /* background-color: #f9f9f9; */
     min-width: 198px;
-    width: 198px;
     scroll-snap-align: center;
     padding: 5%;
-    align-content: flex-start;
 }
 
 .card-producto img{
     max-width: 100%;
-    min-height: 200px;
     max-height: 200px;
     border-radius: 13.42px;
 }
@@ -51,23 +46,23 @@ body{
     text-align: left;
     font-size: 16px;
     font-weight: bold;
+    margin: 0;
 }
 
 .card-producto p{
     text-align: left;
+    margin: 0;
 }
 
+/* Estilo de componentes dentro de card */
 .rating {
     display: flex;
     align-items: center;
 }
 
-.rating p{
-    margin: 0 1px;
-}
-
 .pricing {
     display: flex;
+    margin: 0 1px;
 }
 
 .pricing p{
@@ -77,14 +72,14 @@ body{
 }   
 
 .discount{
-    padding: 0 5px;
     color: #00000040;
     text-decoration: line-through;
+    padding: 0 5px;
 }
 
 .percent {
     background: #FF333310;
-    padding: 6px 14px; 
+    padding: 5px 10px; 
     border-radius: 62px;
 }
 
